@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="frmEmprestimo">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="14" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="917" height="589"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="47cb" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="158" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Pesquisar Empréstimos"/>
+        </properties>
+      </component>
+      <component id="cf2a6" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="3" use-parent-layout="false">
+            <preferred-size width="158" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Pesquisar por:"/>
+        </properties>
+      </component>
+      <component id="a34c4" class="javax.swing.JTextField" binding="txtPesquisa">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="1" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="fb1a4" class="javax.swing.JButton" binding="btnPesquisar">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="PESQUISAR"/>
+        </properties>
+      </component>
+      <hspacer id="ae221">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="6" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="44b06" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="158" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Selecione o cliente abaixo:"/>
+        </properties>
+      </component>
+      <component id="fe958" class="javax.swing.JTable" binding="tbCliente">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="90"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="85e3" class="javax.swing.JTable" binding="tbLivro">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="90"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="194aa" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="158" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Empréstimos:"/>
+        </properties>
+      </component>
+      <component id="d236e" class="javax.swing.JTable" binding="tbEmprestimos">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="6" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="100"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="5f08f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="158" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Dados Empréstimos"/>
+        </properties>
+      </component>
+      <component id="a82f7" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="3" use-parent-layout="false">
+            <preferred-size width="158" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="ID:"/>
+        </properties>
+      </component>
+      <component id="f4467" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="3" use-parent-layout="false">
+            <preferred-size width="158" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="ID do Cliente:"/>
+        </properties>
+      </component>
+      <component id="caaa" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="3" use-parent-layout="false">
+            <preferred-size width="158" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="ID do Livro:"/>
+        </properties>
+      </component>
+      <component id="37778" class="javax.swing.JTextField" binding="txtId">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="39143" class="javax.swing.JTextField" binding="txtIdCliente">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="8016c" class="javax.swing.JTextField" binding="txtIdLivro">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="9ff17" class="javax.swing.JTextArea" binding="ATENÇÃOPreenchaOsCamposTextArea" default-binding="true">
+        <constraints>
+          <grid row="9" column="3" row-span="2" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <enabled value="true"/>
+          <text value="ATENÇÃO!! Preencha os campos &quot;Cliente&quot; e &quot;Livro&quot; clicando&#10;no registro, encontrado na área de pesquisa.&#10;"/>
+        </properties>
+      </component>
+      <component id="f48c2" class="javax.swing.JTextField" binding="txtDataEmprestimo">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="fba77" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="3" use-parent-layout="false">
+            <preferred-size width="158" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Data Empréstimo(d/M/Y):"/>
+        </properties>
+      </component>
+      <component id="28ba9" class="javax.swing.JRadioButton" binding="rbtnCliente">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="2"/>
+          <text value="Clientes"/>
+        </properties>
+      </component>
+      <component id="594da" class="javax.swing.JRadioButton" binding="rbtnLivro">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="false"/>
+          <text value="Livros"/>
+        </properties>
+      </component>
+      <component id="c2e7b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="3" use-parent-layout="false">
+            <preferred-size width="158" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Data Devolução(d/M/Y):"/>
+        </properties>
+      </component>
+      <component id="465dc" class="javax.swing.JTextField" binding="txtDataDevolucao">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="70ccf" class="javax.swing.JButton" binding="btnNovo">
+        <constraints>
+          <grid row="13" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="NOVO"/>
+        </properties>
+      </component>
+      <component id="ac2ab" class="javax.swing.JButton" binding="btnExcluir">
+        <constraints>
+          <grid row="12" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="EXCLUIR"/>
+        </properties>
+      </component>
+      <component id="84876" class="javax.swing.JButton" binding="btnDevolver">
+        <constraints>
+          <grid row="12" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="DEVOLVER"/>
+        </properties>
+      </component>
+      <component id="439b1" class="javax.swing.JButton" binding="btnEmprestar">
+        <constraints>
+          <grid row="13" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="EMPRESTAR"/>
+        </properties>
+      </component>
+      <component id="79852" class="javax.swing.JButton" binding="btnSair">
+        <constraints>
+          <grid row="13" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="SAIR"/>
+        </properties>
+      </component>
+      <component id="c665e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Selecione o livro abaixo:"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Livros">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="11" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="628" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <hspacer id="a5002">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="10ae9" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pesquisar Livros"/>
+        </properties>
+      </component>
+      <component id="f7caa" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="5" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Nome:"/>
+        </properties>
+      </component>
+      <component id="d4bab" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="336" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="9a57e" class="javax.swing.JButton" binding="btnPesquisar">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="PESQUISAR"/>
+        </properties>
+      </component>
+      <component id="30545" class="javax.swing.JTable" binding="tbLivro">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="241"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="f4b5" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Dados Livros"/>
+        </properties>
+      </component>
+      <component id="c0722" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="5" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="ID:"/>
+        </properties>
+      </component>
+      <component id="e7ae2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="5" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Exemplar:"/>
+        </properties>
+      </component>
+      <component id="825f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="5" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Autor:"/>
+        </properties>
+      </component>
+      <component id="84633" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="5" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Edição:"/>
+        </properties>
+      </component>
+      <component id="53d92" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="5" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Ano:"/>
+        </properties>
+      </component>
+      <component id="8128b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="5" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Disponibilidade:"/>
+        </properties>
+      </component>
+      <component id="36805" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="336" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="e06c1" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="336" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="71305" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="336" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="b7990" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="336" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="e692d" class="javax.swing.JTextField" binding="textField6" default-binding="true">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="336" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="52ad8" class="javax.swing.JTextField" binding="textField7" default-binding="true">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="336" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="46ebc" class="javax.swing.JButton" binding="btnSair">
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="SAIR"/>
+        </properties>
+      </component>
+      <component id="fbb9d" class="javax.swing.JButton" binding="btnCadastrar">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="CADASTRAR"/>
+        </properties>
+      </component>
+      <component id="31474" class="javax.swing.JButton" binding="btnNovo">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="NOVO"/>
+        </properties>
+      </component>
+      <component id="fb679" class="javax.swing.JButton" binding="btnAlterar">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="ALTERAR"/>
+        </properties>
+      </component>
+      <component id="a58f5" class="javax.swing.JButton" binding="btnExcluir">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="EXCLUIR"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
