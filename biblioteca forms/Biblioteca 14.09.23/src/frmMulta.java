@@ -1,18 +1,18 @@
 import javax.swing.*;
 
 public class frmMulta {
-    private JTextField textField1;
+    private JTextField txtNomeCliente;
     private JButton btnPesquisar;
     private JTable tbCliente;
-    private JTable tbLivro;
-    private JTextField textField2;
-    private JTextField textField4;
+    private JTable tbMulta;
+    private JTextField txtIdCliente;
+    private JTextField txtValor;
     private JButton btnExcluir;
-    private JButton btnDevolver;
-    private JTextArea ATENÇÃOPreenchaOsCamposTextArea;
+    private JButton btnPagar;
+    private JTextArea ATENÇÃOParaEfetuarOTextArea;
     private JButton btnNovo;
-    private JButton btnEmprestar;
+    private JButton btnRegistrar;
     private JButton btnSair;
-    private JTextField textField5;
-    private JComboBox comboBox1;
+    private JTextField txtValorTotal;
+    private JComboBox cbxDescricao;
 }

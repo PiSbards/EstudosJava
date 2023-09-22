@@ -5,7 +5,8 @@ public class TesteConn {
         //conexao conexao = new conexao();
         //Connection conn = conexao.conectar();
 
-        PrimeiraTela tela = new PrimeiraTela();
+        Clientes frmCliente = new Clientes();
+        frmCliente.setVisible(true);
 
     }
 }
