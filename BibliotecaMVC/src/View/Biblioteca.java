@@ -10,9 +10,11 @@ import java.sql.SQLException;
 
 public class Biblioteca {
     public static void main(String[] args) throws SQLException {
-        BdLivro conexao = new BdLivro();
-        Livro livro1 = new Livro("Senhor dos Anéis","Tolkien",13,1999,"S");
-        conexao.adicionarLivro(livro1);
+        //BdLivro conexao = new BdLivro();
+        //Livro livro1 = new Livro("Senhor dos Anéis","Tolkien",13,1999,"S");
+        //conexao.adicionarLivro(livro1);
+        FormCliente frmCliente = new FormCliente();
+        frmCliente.setVisible(true);
 
 
     }
