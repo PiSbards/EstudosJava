@@ -4,6 +4,8 @@ import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class FormLivro{
     public FormLivro(){
@@ -20,6 +22,13 @@ public class FormLivro{
         JLabel lblPesquisar = new JLabel("Nome:");
         JTextField inputNome = new JTextField(50);
         JButton btnPesquisar = new JButton("Pesquisar");
+        btnPesquisar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nome = inputNome.getText();
+
+            }
+        });
 
             //GRID LIVROS
         String [] colunas = {"Id","Exemplar","Autor","Ano","Disponibilidade"};
@@ -60,12 +69,47 @@ public class FormLivro{
         JPanel panelBotoes = new JPanel(new GridLayout(5,1));
         TitledBorder botoes = new TitledBorder("");
         panelBotoes.setBorder(botoes);
+        JButton btnExcluir = new JButton("Excluir");
+        JButton btnAlterar = new JButton("Alterar");
+        JButton btnNovo = new JButton("Novo");
+        JButton btnCadastrar = new JButton("Cadastrar");
+        JButton btnSair = new JButton("Sair");
 
-        panelBotoes.add(new JButton("EXCLUIR"));
-        panelBotoes.add(new JButton("ALTERAR"));
-        panelBotoes.add(new JButton("NOVO"));
-        panelBotoes.add(new JButton("CADASTRAR"));
-        panelBotoes.add(new JButton("SAIR"));
+        btnExcluir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+
+            }
+        });
+        btnAlterar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+
+            }
+        });
+        btnNovo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+
+            }
+        });
+        btnCadastrar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+
+            }
+        });
+        btnSair.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.dispose();
+
+            }
+        });
 
         panelFormulario.add(panelDados,BorderLayout.CENTER);
         panelFormulario.add(panelBotoes,BorderLayout.EAST);

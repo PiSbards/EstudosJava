@@ -13,9 +13,8 @@ public class Biblioteca {
         //BdLivro conexao = new BdLivro();
         //Livro livro1 = new Livro("Senhor dos Anéis","Tolkien",13,1999,"S");
         //conexao.adicionarLivro(livro1);
-        FormLivro frmLivro = new FormLivro();
-
-
+       //FormLivro frmLivro = new FormLivro();
+        FormCliente frmCliente = new FormCliente();
 
     }
 
