@@ -5,7 +5,7 @@ public class Cliente {
     private String nome;
     private Date dataNasc;
     private String sexo;
-    private String cpf;
+
     private String endereco;
     private String fone;
 
@@ -13,7 +13,7 @@ public class Cliente {
         this.nome = nome;
         this.dataNasc = dataNasc;
         this.sexo = sexo;
-        this.cpf = cpf;
+
         this.endereco = endereco;
         this.fone = fone;
     }
@@ -37,8 +37,8 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public Date getDataNasc() {
-        return dataNasc;
+    public String getDataNasc() {
+        return String.valueOf(dataNasc);
     }
 
     public void setDataNasc(Date dataNasc) {
@@ -53,13 +53,9 @@ public class Cliente {
         this.sexo = sexo;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
+
+
 
     public String getEndereco() {
         return endereco;

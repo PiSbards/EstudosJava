@@ -1,14 +1,24 @@
 package View;
 
+import Model.Cliente;
+import uteis.BdCliente;
+
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Date;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class FormCliente{
+    JButton btnExcluir,btnAlterar,btnNovo,btnCadastrar,btnSair;
+
+    JLabel lblId,lblNome,lblData_de_Nascimento, lblSexo, lblEndereco, lblTelefone;
+
+    JTextField txtId,txtNome,txtData_de_Nascimento, txtSexo, txtEndereco, txtTelefone;
     public FormCliente() {
         //FRAME
         JFrame frame = new JFrame("Formulário Cliente");
@@ -46,22 +56,38 @@ public class FormCliente{
 
 
         //PANEL "DADOS DOS CLIENTES"
-        JPanel panelDados = new JPanel(new GridBagLayout());
+        JPanel panelDados = new JPanel(new GridLayout(6,2));
         TitledBorder tituloDadosClientes = new TitledBorder("Dados Clientes");
         panelDados.setBorder(tituloDadosClientes);
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.HORIZONTAL;
-        String [] labels = {"Id","Nome","Data de Nascimento", "Sexo","Endereço","Telefone"};
-        int [] tamanhoCampo = {5,20,10,14,30,15};
-        for (int i=0;i<tamanhoCampo.length;i++){
-            gbc.gridx = 0;
-            gbc.gridy = i;
-            gbc.weightx = 1;
-            panelDados.add(new JLabel(labels[i]),gbc);
-            gbc.gridx = 1;
-            gbc.weightx = 1;
-            panelDados.add(new JTextField(tamanhoCampo[i]),gbc);
-        }
+
+        lblData_de_Nascimento = new JLabel("Data de Nascimento:");
+        lblId = new JLabel("Id:");
+        lblNome = new JLabel("Nome:");
+        lblSexo = new JLabel("Sexo:");
+        lblEndereco = new JLabel("Endereço:");
+        lblTelefone = new JLabel("Telefone:");
+
+        txtId = new JTextField(200);
+        txtNome = new JTextField(200);
+        txtSexo = new JTextField(200);
+        txtEndereco = new JTextField(200);
+        txtData_de_Nascimento = new JTextField(200);
+        txtTelefone = new JTextField(200);
+
+        panelDados.add(lblId);
+        panelDados.add(txtId);
+        panelDados.add(lblNome);
+        panelDados.add(txtNome);
+        panelDados.add(lblData_de_Nascimento);
+        panelDados.add(txtData_de_Nascimento);
+        panelDados.add(lblSexo);
+        panelDados.add(txtSexo);
+        panelDados.add(lblEndereco);
+        panelDados.add(txtEndereco);
+        panelDados.add(lblTelefone);
+        panelDados.add(txtTelefone);
 
         //PANEL SEPARAÇÃO DE FRAME
         JPanel panelFormulario = new JPanel(new BorderLayout());
@@ -71,23 +97,23 @@ public class FormCliente{
         JPanel panelBotoes = new JPanel(new GridLayout(5,1));
         TitledBorder botoes = new TitledBorder("");
         panelBotoes.setBorder(botoes);
-        JButton btnExcluir = new JButton("Excluir");
-        JButton btnAlterar = new JButton("Alterar");
-        JButton btnNovo = new JButton("Novo");
-        JButton btnCadastrar = new JButton("Cadastrar");
-        JButton btnSair = new JButton("Sair");
+        btnExcluir = new JButton("Excluir");
+        btnAlterar = new JButton("Alterar");
+        btnNovo = new JButton("Novo");
+        btnCadastrar = new JButton("Cadastrar");
+        btnSair = new JButton("Sair");
 
         btnExcluir.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ArrayList exclusao = ;
+
 
             }
         });
         btnAlterar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ArrayList alterar = ;
+
 
             }
         });
@@ -101,7 +127,24 @@ public class FormCliente{
         btnCadastrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ArrayList cadastro = ;
+                try {
+                    //"Nome","Data de Nascimento", "Sexo","Endereço","Telefone";
+                    Cliente cliente = new Cliente();
+                    cliente.setDataNasc(Date.valueOf(txtData_de_Nascimento.getText()));
+                    cliente.setNome(txtNome.getText());
+                    cliente.setSexo(txtSexo.getText());
+                    cliente.setEndereco(txtEndereco.getText());
+                    cliente.setFone(txtTelefone.getText());
+
+                    BdCliente c = new BdCliente();
+                    c.adicionaCliente(cliente);
+
+                    JOptionPane.showMessageDialog(null,"Cadastrado com sucesso!");
+                    limpaCampos();
+                    desabilitaCampos();
+                } catch (SQLException ex) {
+                    JOptionPane.showMessageDialog(null,"Erro ao cadastrar dados!");
+                }
 
             }
         });
@@ -129,5 +172,31 @@ public class FormCliente{
         frame.add(panelFormulario,BorderLayout.SOUTH);
 
         frame.setVisible(true);
+    }
+    private void limpaCampos(){
+        txtId.setText("");
+        txtNome.setText("");
+        txtData_de_Nascimento.setText("");
+        txtEndereco.setText("");
+        txtSexo.setText("");
+        txtTelefone.setText("");
+    }
+
+    private void desabilitaCampos(){
+        txtId.setEditable(false);
+        txtNome.setEditable(false);
+        txtData_de_Nascimento.setEditable(false);
+        txtEndereco.setEditable(false);
+        txtSexo.setEditable(false);
+        txtTelefone.setEditable(false);
+    }
+
+    private void habilitaCampos(){
+        txtId.setEditable(true);
+        txtNome.setEditable(true);
+        txtData_de_Nascimento.setEditable(true);
+        txtEndereco.setEditable(true);
+        txtSexo.setEditable(true);
+        txtTelefone.setEditable(true);
     }
 }
